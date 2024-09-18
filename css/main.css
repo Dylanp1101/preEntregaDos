@@ -1,0 +1,235 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos de encabezado*/
+
+header {
+    background-color: black;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header img {
+    height: 10%;
+    width: 10%;
+
+}
+
+
+/* estilos del index */
+
+main {
+    text-align: left;
+    padding: 30px;
+    background-image: url(../img/R\ \(1\).jpg)
+}
+
+main h1 {
+    margin-bottom: 20px;
+    color: white;
+    margin: 30px;
+}
+
+main p {
+    color: white;
+    margin: 30px;
+}
+
+main .boton {
+    background-color: black;
+    display: inline-block;
+    padding: 10px;
+    margin: 30px;
+    border: 2px solid rgb(144, 139, 139);
+
+}
+
+main .boton a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/*estilo de pagina "productos"*/
+
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+
+
+.container2 img {
+    height: 270px;
+    width: 270px;
+    margin: 20px;
+}
+
+
+.title {
+    text-align: center;
+
+}
+
+/* Estilos de pagina "nosotros"*/
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+
+.img-uno {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+}
+
+.img-dos {
+    grid-row: span 4 / span 4;
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+.img-tres {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.img-cuatro {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.galeria div img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.nosotros {
+    text-align: center;
+}
+
+/*estilo de pagina "contacto"*/
+
+.contacto {
+
+    color: white;
+    margin: 30px;
+}
+
+aside {
+    background-color: gray;
+
+}
+
+aside div form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+aside div form label {
+    color: black;
+    width: 49%;
+    text-align: left;
+    margin-left: 3px;
+}
+
+aside div form input {
+    margin-left: 3px;
+    margin-bottom: 20px;
+    width: 580px;
+    text-align: left;
+    height: 30px;
+
+}
+
+aside div form input[type="radio"],
+input[type="checkbox"] {
+    width: 30px;
+    height: auto;
+}
+
+
+aside div form [type="submit"] {
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 160px;
+
+}
+
+
+/* estilos del pie de pagina */
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 15px;
+}
+
+
+/* estilo de mobile de home */
+
+@media screen and (min-width:374px) {
+    
+    main {
+        text-align: center;
+        background-image: url(../img/R\ \(1\).jpg)
+    }
+    
+    .video {
+        position: relative;
+        padding-bottom: 56%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    .video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* estilo de mobile de locales */
+
+    .mapa {
+        position: relative;
+        padding-bottom: 56%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    .mapa iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+}
